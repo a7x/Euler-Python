@@ -1,13 +1,5 @@
 def ifPalindrome(n):
+    return n == n[::-1]
 
-	newS=n[::-1]
-	return newS==n
-largest=-1
-
-for i in range(100,1000):
-	for j in range(i+1,1000):
-		product=i*j
-		if(ifPalindrome(str(product))):
-			if(largest<product):
-				largest=product
-print largest
+print max([i*j for i in xrange(100, 1000) \
+               for j in xrange(i+1, 1000) if ifPalindrome(str(i*j))])
