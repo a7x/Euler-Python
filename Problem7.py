@@ -8,6 +8,8 @@ def ifPrime(n):
     '''
     
     sqrt = math.sqrt(n)
+    if n == 2 or n == 3 or n == 5:
+        return True
     if n % 2 == 0 or n % 3 == 0:
         return False
     if str(n).endswith('0') or str(n).endswith('5'):
