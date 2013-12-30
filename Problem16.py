@@ -1,5 +1,3 @@
-number=2**1000
-sum=0
-for n in str(number):
-	sum=sum+int(n)
-print sum
+#new code
+num = 2 ** 1000
+print sum([int(x) for x in str(num)])
