@@ -21,6 +21,6 @@ def ifPrime(n):
     return True
     
 start = 2 
-print start + sum([n for n in xrange(3, 2000000) if ifPrime(n)])
+print start + sum([n for n in xrange(3, 2000000, 2) if ifPrime(n)])
 
   
