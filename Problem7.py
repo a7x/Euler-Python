@@ -31,7 +31,6 @@ while True:
     if num_primes == 10001:
         print start - 2
         break
-    
     if ifPrime(start):
         num_primes += 1
     start += 2
